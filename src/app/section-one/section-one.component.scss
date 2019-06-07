@@ -1,0 +1,359 @@
+header {
+   width: 100%;
+   height: 320px;
+   /* border: solid 1px #000000; */
+  
+}
+header nav {
+   display: flex;
+   height: 100%;
+   margin-top: 10px;
+   justify-content: space-around;
+   align-items: center;
+   text-align: center;
+
+}
+header nav > div {
+  flex: 1;
+}
+
+
+header nav > div > button {
+   position: relative;
+   top: -40px;
+
+   background-color: #333333;
+   color: white;
+   font-size: 18px;
+   padding: 10px  20px;
+   border-radius: 5px 5px;
+   box-shadow: 2px 2px 4px #888888;
+}
+
+
+header nav > div:nth-child(2) img{
+   padding-top: 20px; 
+   width: 100%;
+   height: 460px;
+}
+
+
+header nav > div:nth-child(3) ul, li {
+   position: relative;
+   top: -14px;
+   font-size: 18px;
+   font-weight: 700;
+   padding: 5px 5px;
+   list-style: none;
+   display: inline-block;
+}
+header nav > div:nth-child(3)  a{
+   float: left;
+   display: block;
+   color: black;
+}
+
+.open-slide {
+   visibility: hidden;
+}
+
+.fa-phone {
+   visibility: hidden;
+}
+.callContanter {
+    width: 100%;
+    text-align:  center;
+    padding-top: 210px;
+}
+.callContanter .callLabel {
+   text-align:  center;
+   
+  font-size: 70px;
+  font-weight: 700;
+  
+}
+
+.callContanter .callBtn {
+   text-align:  center;
+
+   background: white;
+   font-size: 78px;
+   font-weight: 700;
+   color: #c9291c;
+   margin-top: 25px;
+   padding: 6px  40px;
+   border-radius: 8px 8px;
+   box-shadow: 5px 5px 7px 5px  #29292980;
+   
+}
+.col img {
+   display:inline-block;
+   float:none;
+   text-align: center;
+   /* background-color: #ccc; */
+   /* border: 1px solid #ddd; */
+}
+
+.btnFoot { 
+   position: relative;
+   color: white;
+   font-size: 16px;
+   padding: 10px  20px;
+   border-radius: 5px 5px;
+   box-shadow: 2px 2px 4px #888888;
+}
+.red {
+   color: white;
+   background-color: #c9291c;
+}
+
+
+
+
+section {
+   position: relative;
+   width: 100%;
+   margin-top:-160px;
+   font-weight: 800;
+   background-color: #c9291c;
+   color: white;
+   z-index: -1;
+}
+section .secOne {
+   display: flex;
+   position: relative;
+   width: 100%;
+   height: 120vh;
+   top: 200px;
+   text-align: center;
+   text-shadow: 2px 2px 4px #000000;
+
+
+} 
+.secOne div{
+   width: 80%;
+}
+
+
+.SecTwo {
+   position: relative;
+   background-image: url("./../../assets/images/Leos-Locksmiths-Keys-Background.png");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+   background-attachment: fixed;
+   width: 100%;
+   height: auto;
+}
+
+.SecTwo img {
+
+   display: block;
+   width: 100%;
+   height: auto;
+   object-fit: cover;
+
+}
+.overlay {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   width: 100%;
+   height: auto;
+   opacity: 1;
+   transition: .5s ease;
+   background-color: rgba(0, 0, 0, 0.705);
+}
+.SecTwo h2,h4,h6{
+   margin-top: 0px;
+   z-index: 4;
+   color: rgb(255, 255, 255);
+   padding: 4px 10px;
+   line-height: 1.6;
+
+}
+.container-fluid  iframe {
+   margin-top: 70px;
+}
+
+.container-fluid h1{
+   font-weight: 900;
+}
+.container-fluid h5{
+   font-size: 16px;
+}
+.container-fluid span{
+   font-weight: 900;
+}
+
+
+
+form {
+   background: white;
+   width: 100%;
+   height: auto;
+   margin-top: 60px;
+   padding: 50px;
+   border: 2px solid #cccccc;
+}
+.formPickupImgBtn {
+    margin-top: 25px;
+    width: 150px;
+    background-color: #009ad6;
+    color:  white;
+    font-weight: 400;font-size: 16px;
+ 
+ }
+ 
+.formSubmitBtn {
+   margin-top: 25px;
+   width: 200px;
+   background-color: #333333;
+   color:  white;
+   font-weight: 700;font-size: 20px;
+
+}
+
+input[type=text] {
+   border: none;
+   border-bottom: 2px solid #333333;
+}
+input[type=email] {
+   border: none;
+   border-bottom: 2px solid #333333;
+}
+input[type="file"] {
+    visibility: hidden;
+}
+
+.image-preview {
+    height: 5rem;
+    margin: 1rem 0;
+}
+.image-preview img {
+    height: 100%;
+}
+
+.garrlay{
+   display: flex;
+   width:  100.5%;
+   flex-flow: row wrap;
+   margin: auto;
+}
+.garrlay div  {
+   width:  16.6%;
+   height: 150px;
+   background-color: gray;
+
+}
+.garrlay img {
+   width:  150px;
+   height: 150px;
+
+}
+
+footer {
+   width: 100%;
+   height: 500px;
+   background: #c9291c;
+   text-align: center; 
+}
+
+
+@media (max-width: 600px) {
+
+   .navbar-nav li{ display: none}
+ 
+   .fa-phone {
+      visibility: visible;
+    }
+   .open-slide {
+       visibility: visible;
+       
+   }
+   nav > div strong {
+      display: none;
+   }
+
+   header nav > div > button {
+       position: relative;
+       top: -16px;
+       background-color: #333333;
+       color: white;
+       font-size: 11px;
+       padding: 6px  10px;
+       border-radius: 5px 5px;
+       box-shadow: 2px 2px 4px #888888;
+   }
+   header nav {
+       display: flex;
+       height: 100%;
+       margin-top: -90px;
+       justify-content: space-around;
+       align-items: center;
+       text-align: center;
+   }
+   header nav > div:nth-child(2) img{
+       width: 100%;
+       height: 100%;
+       margin-left: 10px;
+   }
+   
+   header nav > div {
+      flex: 1;
+   }
+
+
+   
+   section {
+       position: relative;
+       width: 100%;
+       margin-top:-150px;
+       background-color: #c9291c;
+       color: white;
+       z-index: -1;
+   }
+
+   .callContanter {
+      width: 100%;
+      text-align:  center;
+      padding-top: 100px;
+  }
+  .callContanter .callLabel {
+     text-align:  center;
+      font-size: 25px;
+      font-weight: 700;
+      width: auto;
+    
+  }
+  
+  .callContanter .callBtn {
+     text-align:  center;
+  
+     background: white;
+     font-size: 25px;
+     font-weight: 700;
+     color: #c9291c;
+     margin-top: 25px;
+     padding: 6px  40px;
+     border-radius: 8px 8px;
+     box-shadow: 5px 5px 7px 5px  #29292980;
+     
+  }
+
+  img {
+     height: 100px !important;
+  }
+  h3 {
+     font-size: 12px !important;
+  }
+
+  .col > div {
+     width: 80px !important;
+  }
+
+  
+   
+} 

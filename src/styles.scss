@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+    font-family: sans-serif; /* 1 */
+    line-height: 1.15; /* 2 */
+    -ms-text-size-adjust: 100%; /* 3 */
+    -webkit-text-size-adjust: 100%; /* 3 */
+  }
+  
+  /* Sections
+     ========================================================================== */
+  
+  /**
+   * Remove the margin in all browsers (opinionated).
+   */
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    
+
+}
+
+
