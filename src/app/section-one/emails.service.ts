@@ -22,7 +22,7 @@ export class EmailService {
         emailData.append('image', image, name);
 
       
-        this.http.post<{emails: Emails}>('http://localhost:3001/api/emails', emailData).subscribe();
+        this.http.post<{emails: Emails}>('http://leonode-env.mtyftp93yf.ap-southeast-2.elasticbeanstalk.com/api/emails', emailData).subscribe();
 
     }
 

@@ -9,7 +9,7 @@ var transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
            user: 'william.zhou8818@gmail.com',
-           pass: '@Zhouli881118'
+           pass: '' //Your password here and check google app securiy setting
        }
    });
 
@@ -29,7 +29,7 @@ const storage = multer.diskStorage({
         if (isValid) {
             error = null;
         }
-        cb(null, "backend/images");
+        cb(null, "images");
     },
     filename: (req, file, cb) => {
         const  name = file.originalname.toLowerCase().split(' ').join('-');
@@ -48,6 +48,7 @@ router.post("", multer({storage: storage}).single("image"), (req, res, next) => 
         messages: req.body.messages,
         imagePath: url + "/images/" + req.file.filename
     });
+    console.log(emails.imagePath);
     emails.save().then(createdReq => {
         res.status(201).json({
             message: 'Post added sucessfully',
